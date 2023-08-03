@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="image_counter" type="img_pub.py" name="webcam_publisher_node" output="screen"/>
+  <node pkg="image_counter" type="img_count.py" name="img_counter_node" output="screen"/>
+  <node pkg="image_counter" type="img_path_log.py" name="img_path_saver_node" output="screen"/>
+</launch>
